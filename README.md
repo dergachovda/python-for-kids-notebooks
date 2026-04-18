@@ -37,6 +37,8 @@ This helps students focus on trying tasks before seeing answers.
 
 ## Quick Start
 
+Recommended Python version: 3.14+
+
 1. Initialize the workspace automatically:
 
 ```bash

@@ -4,14 +4,16 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 if [[ ! -d ".venv" ]]; then
-  if command -v python3 >/dev/null 2>&1; then
+  if command -v python3.14 >/dev/null 2>&1; then
+    python3.14 -m venv .venv
+  elif command -v python3 >/dev/null 2>&1; then
     python3 -m venv .venv
   elif command -v python >/dev/null 2>&1; then
     python -m venv .venv
   elif command -v py >/dev/null 2>&1; then
-    py -3 -m venv .venv
+    py -3.14 -m venv .venv || py -3 -m venv .venv
   else
-    echo "Python was not found. Install Python 3 and try again."
+    echo "Python was not found. Install Python 3.14+ and try again."
     exit 1
   fi
 fi
