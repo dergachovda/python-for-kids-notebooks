@@ -2,56 +2,110 @@
 
 Interactive Jupyter notebooks for learning Python based on *Python for Kids* by Jason R. Briggs.
 
-This project is a beginner-friendly companion with short explanations, fun exercises, and solutions.
+This repository now uses a guided release workflow so students do not see all chapters immediately.
 
 ## Who is this for?
 
 - Kids who are new to coding
 - Absolute beginners
-- Parents and teachers who want structured beginner lessons
+- Parents and teachers who want a structured path
 
 ## Learning goals
 
-- Learn Python step by step, chapter by chapter
-- Practice with small tasks and clear TODOs
-- Build confidence by running code in Jupyter and Google Colab
+- Learn Python chapter-by-chapter
+- Practice first, then reveal solutions
+- Keep momentum with small, clear steps
 
-## Run the notebooks locally (Jupyter)
+## Guided Learning Release
 
-1. Clone this repository.
+Content is stored in a hidden author source folder and copied into a student-facing folder as chapters are unlocked.
+
+- Author source: `.content/`
+- Student workspace: `lessons/`
+- Local progress state: `.state/progress.json`
+
+### Unlock model
+
+Each chapter has two unlock stages:
+
+1. Practice stage: `theory.md` + `exercises.ipynb`
+1. Solution stage: `solutions.ipynb`
+
+This helps students focus on trying tasks before seeing answers.
+
+## Quick Start
+
+1. Initialize the workspace automatically:
+
+```bash
+# Windows
+init.bat
+
+# Bash (Git Bash, Linux, macOS)
+./init.sh
+```
+
+1. Optional: manual setup (if you do not use init scripts):
+
+1. Create a Python virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+1. Activate the environment:
+
+```bash
+# Windows (PowerShell)
+.venv\Scripts\Activate.ps1
+
+# Windows (Git Bash)
+source .venv/Scripts/activate
+
+# Linux/macOS
+source .venv/bin/activate
+```
+
 1. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-1. Start Jupyter:
+1. Start interactive release menu:
 
 ```bash
-jupyter notebook
+# Windows
+run.bat
+
+# Bash (Git Bash, Linux, macOS)
+./run.sh
 ```
 
-1. Open any notebook in a chapter folder and run cells from top to bottom.
+1. Open notebooks from the `lessons/` folder.
 
-## Run in Google Colab
+## Script Commands
 
-You can open notebooks directly in Colab using the badges below.
+You can use interactive menu mode or direct commands.
 
-### Chapter 1 - Getting Started
+```bash
+# Show status
+python scripts/release.py status
 
-- Exercises: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dergachovda/python-for-kids-notebooks/blob/main/chapter-01-getting-started/exercises.ipynb)
-- Solutions: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dergachovda/python-for-kids-notebooks/blob/main/chapter-01-getting-started/solutions.ipynb)
+# Unlock next chapter practice
+python scripts/release.py unlock-practice
 
-### Chapter 2 - Variables and Input
+# Unlock next chapter solutions
+python scripts/release.py unlock-solution
 
-- Exercises: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dergachovda/python-for-kids-notebooks/blob/main/chapter-02-variables-and-input/exercises.ipynb)
-- Solutions: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dergachovda/python-for-kids-notebooks/blob/main/chapter-02-variables-and-input/solutions.ipynb)
+# Preview what would unlock next
+python scripts/release.py dry-run
 
-### Bonus Mini-Project
+# Reset progress and clean generated lessons output
+python scripts/release.py reset
+```
 
-- Guess the Number: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dergachovda/python-for-kids-notebooks/blob/main/bonus-mini-project/guess-the-number.ipynb)
-
-## Repository structure
+## Repository Structure
 
 ```text
 python-for-kids-notebooks/
@@ -59,75 +113,37 @@ python-for-kids-notebooks/
 |-- README.md
 |-- requirements.txt
 |-- .gitignore
+|-- run.bat
+|-- run.sh
 |
-|-- chapter-01-getting-started/
-|   |-- theory.md
-|   |-- exercises.ipynb
-|   `-- solutions.ipynb
+|-- scripts/
+|   |-- release.py
+|   `-- release_manager.py
 |
-|-- chapter-02-variables-and-input/
-|   |-- theory.md
-|   |-- exercises.ipynb
-|   `-- solutions.ipynb
+|-- .content/
+|   |-- manifest.json
+|   |-- chapter-01-getting-started/
+|   |-- chapter-02-variables-and-input/
+|   `-- bonus-mini-project/
 |
-|-- bonus-mini-project/
-|   `-- guess-the-number.ipynb
+|-- lessons/
+|   `-- .gitkeep
 |
 `-- assets/
     `-- images/
 ```
 
-## Progress checklist
+## Notes
 
-- [x] Repo created
-- [x] 2 chapters implemented
-- [x] Exercises and solutions notebooks added
-- [x] Colab links added
-- [x] Beginner-friendly explanations included
-
-## Learning roadmap
-
-- Chapter 1: Getting Started
-- Chapter 2: Variables and Input
-
-Planned next chapters:
-
-- Chapter 3: Loops
-- Chapter 4: Lists
-- Chapter 5: Functions
-- Chapter 6: Turtle Graphics
-
-## Try it yourself style
-
-Each exercises notebook includes:
-
-- TODO tasks to complete
-- Hints under exercises
-- Expected output examples
-- Small "Try it yourself" playground sections
-
-## What to learn next
-
-After Chapter 2, try these mini goals:
-
-- Build a number guessing game with attempts
-- Make a simple quiz with input and score
-- Learn `if` statements and loops to create interactive games
+- This is a guided workflow, not hard content security.
+- Progress is local and ignored by git.
+- The repository content remains original companion material and does not reproduce book text.
 
 ## Contributing
 
 Contributions are welcome.
 
-If you want to help:
-
 1. Fork the repository
-2. Create a branch
-3. Add or improve notebook content
-4. Open a pull request
-
-Please keep explanations short, simple, and beginner-friendly.
-
-## Content note
-
-This repository is an original educational companion inspired by the chapter topics of the book.
-It does not reproduce book text.
+1. Create a branch
+1. Improve content or scripts
+1. Open a pull request

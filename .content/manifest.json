@@ -1,0 +1,40 @@
+{
+  "chapters": [
+    {
+      "slug": "chapter-01-getting-started",
+      "title": "Getting Started",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": [
+        "solutions.ipynb"
+      ]
+    },
+    {
+      "slug": "chapter-02-variables-and-input",
+      "title": "Variables and Input",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": [
+        "solutions.ipynb"
+      ]
+    },
+    {
+      "slug": "bonus-mini-project",
+      "title": "Bonus Mini Project",
+      "practice_files": [
+        "guess-the-number.ipynb"
+      ],
+      "solution_files": []
+    }
+  ],
+  "initial_unlock": {
+    "practice": [
+      "chapter-01-getting-started"
+    ],
+    "solutions": []
+  }
+}

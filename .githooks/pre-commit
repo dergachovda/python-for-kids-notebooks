@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root="$(git rev-parse --show-toplevel)"
+cd "$repo_root"
+
+mapfile -t staged_notebooks < <(git diff --cached --name-only --diff-filter=ACM | grep -E '\.ipynb$' || true)
+
+if [[ ${#staged_notebooks[@]} -eq 0 ]]; then
+  exit 0
+fi
+
+python scripts/clean_notebook_outputs.py "${staged_notebooks[@]}"
+
+git add "${staged_notebooks[@]}"
