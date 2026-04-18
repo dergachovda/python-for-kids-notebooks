@@ -23,6 +23,116 @@
       ]
     },
     {
+      "slug": "chapter-03-conditionals",
+      "title": "Conditionals",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": [
+        "solutions.ipynb"
+      ]
+    },
+    {
+      "slug": "chapter-04-loops",
+      "title": "Loops",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": [
+        "solutions.ipynb"
+      ]
+    },
+    {
+      "slug": "chapter-05-lists",
+      "title": "Lists",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": [
+        "solutions.ipynb"
+      ]
+    },
+    {
+      "slug": "chapter-06-dictionaries-and-tuples",
+      "title": "Dictionaries and Tuples",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": [
+        "solutions.ipynb"
+      ]
+    },
+    {
+      "slug": "chapter-07-functions",
+      "title": "Functions",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": [
+        "solutions.ipynb"
+      ]
+    },
+    {
+      "slug": "chapter-08-files-and-errors",
+      "title": "Files and Errors",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": [
+        "solutions.ipynb"
+      ]
+    },
+    {
+      "slug": "chapter-09-modules-and-project-structure",
+      "title": "Modules and Project Structure",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": [
+        "solutions.ipynb"
+      ]
+    },
+    {
+      "slug": "chapter-10-classes-and-objects",
+      "title": "Classes and Objects",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": [
+        "solutions.ipynb"
+      ]
+    },
+    {
+      "slug": "chapter-11-turtle-graphics",
+      "title": "Turtle Graphics",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": [
+        "solutions.ipynb"
+      ]
+    },
+    {
+      "slug": "chapter-12-mini-projects",
+      "title": "Mini Projects",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": [
+        "solutions.ipynb"
+      ]
+    },
+    {
       "slug": "bonus-mini-project",
       "title": "Bonus Mini Project",
       "practice_files": [

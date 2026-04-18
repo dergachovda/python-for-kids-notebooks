@@ -2,6 +2,8 @@
 
 Interactive Jupyter notebooks for learning Python based on *Python for Kids* by Jason R. Briggs.
 
+Original book page: [Python for Kids, 2nd Edition](https://nostarch.com/python-kids-2nd-edition)
+
 This repository now uses a guided release workflow so students do not see all chapters immediately.
 
 ## Who is this for?
@@ -124,6 +126,16 @@ python-for-kids-notebooks/
 |   |-- manifest.json
 |   |-- chapter-01-getting-started/
 |   |-- chapter-02-variables-and-input/
+|   |-- chapter-03-conditionals/
+|   |-- chapter-04-loops/
+|   |-- chapter-05-lists/
+|   |-- chapter-06-dictionaries-and-tuples/
+|   |-- chapter-07-functions/
+|   |-- chapter-08-files-and-errors/
+|   |-- chapter-09-modules-and-project-structure/
+|   |-- chapter-10-classes-and-objects/
+|   |-- chapter-11-turtle-graphics/
+|   |-- chapter-12-mini-projects/
 |   `-- bonus-mini-project/
 |
 |-- lessons/
@@ -132,6 +144,24 @@ python-for-kids-notebooks/
 `-- assets/
     `-- images/
 ```
+
+## Implemented Chapters
+
+- Chapter 1: Getting Started
+- Chapter 2: Variables and Input
+- Chapter 3: Conditionals
+- Chapter 4: Loops
+- Chapter 5: Lists
+- Chapter 6: Dictionaries and Tuples
+- Chapter 7: Functions
+- Chapter 8: Files and Errors
+- Chapter 9: Modules and Project Structure
+- Chapter 10: Classes and Objects
+- Chapter 11: Turtle Graphics
+- Chapter 12: Mini Projects
+- Bonus: Guess the Number
+
+All chapters include `theory.md`, `exercises.ipynb`, and `solutions.ipynb` (bonus has project notebook).
 
 ## Notes
 
