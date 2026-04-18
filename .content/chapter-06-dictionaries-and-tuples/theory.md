@@ -1,26 +1,47 @@
-# Chapter 6 - Dictionaries and Tuples
+# Dictionaries and Tuples
 
 Welcome to the next step of your Python journey.
 
 ## What is this chapter about?
 
-Dictionaries store key-value pairs. Tuples store fixed groups of values.
+Dictionaries store data as key-value pairs — like a real dictionary where each word has a meaning.
+Tuples are like lists that cannot be changed after creation.
 
 ## What you learn in this chapter
 
-- Create dictionaries
-- Read and update dictionary values
-- Create tuples
-- Use tuples for fixed data
+- Create a dictionary with curly braces
+- Read and update values by key
+- Create tuples with parentheses
+- Loop through dictionary keys
 
 ## Key idea
 
-Chapter 6 - Dictionaries and Tuples helps you write stronger and smarter programs.
+Dictionaries and Tuples help you write stronger and smarter programs.
 
-## Remember
+## Examples
 
-- Dictionary keys are unique
-- Use dict[key] to read values
-- Tuples use parentheses ()
+### Example 1
 
-Next: Open exercises.ipynb and complete each TODO block.
+```python
+student = {"name": "Mila", "age": 11}
+print(student["name"])
+student["age"] = 12
+print(student)
+```
+
+### Example 2
+
+```python
+point = (4, 7)
+print("x:", point[0])
+print("y:", point[1])
+```
+
+## Quick tips
+
+- Dictionary keys must be unique.
+- Use dict["key"] to read or set a value.
+- Tuples use parentheses: (1, 2, 3).
+- You cannot change a tuple after creating it.
+
+Next: Open `exercises.ipynb` and complete each TODO block.

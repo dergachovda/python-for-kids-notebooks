@@ -134,7 +134,13 @@ def main():
     )
     args = parser.parse_args()
 
-    manager = ReleaseManager()
+    try:
+        manager = ReleaseManager()
+    except FileNotFoundError as exc:
+        print(f"Setup error: {exc}")
+        print("Make sure you are running this from the project root directory.")
+        sys.exit(1)
+
     state = manager.load_state()
     manager.sync_unlocked_content(state)
 

@@ -1,26 +1,49 @@
-# Chapter 8 - Files and Errors
+# Files and Errors
 
 Welcome to the next step of your Python journey.
 
 ## What is this chapter about?
 
-Files let your programs save data. Error handling helps your program stay safe.
+Files let you save data so it survives after the program stops.
+Error handling keeps your program from crashing when something unexpected happens.
 
 ## What you learn in this chapter
 
-- Read from files
-- Write to files
-- Use with open(...)
-- Handle errors with try/except
+- Write text to a file
+- Read text from a file
+- Append data to a file
+- Handle errors with try / except
 
 ## Key idea
 
-Chapter 8 - Files and Errors helps you write stronger and smarter programs.
+Files and Errors help you write stronger and smarter programs.
 
-## Safety tips
+## Examples
 
-- Always close files or use with
-- Read small files first
-- Use try/except for user input
+### Example 1
 
-Next: Open exercises.ipynb and complete each TODO block.
+```python
+with open("notes.txt", "w", encoding="utf-8") as f:
+    f.write("I love Python\n")
+with open("notes.txt", "r", encoding="utf-8") as f:
+    print(f.read())
+```
+
+### Example 2
+
+```python
+try:
+    value = int(input("Enter number: "))
+    print(value)
+except ValueError:
+    print("Not a number")
+```
+
+## Quick tips
+
+- Use with open(...) as f: to work with files safely.
+- Always set encoding="utf-8" when opening files.
+- Mode 'w' writes (overwrites), 'r' reads, 'a' appends.
+- Wrap risky code in try / except to catch errors.
+
+Next: Open `exercises.ipynb` and complete each TODO block.

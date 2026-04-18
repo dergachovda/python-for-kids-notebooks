@@ -1,26 +1,47 @@
-# Chapter 5 - Lists
+# Lists
 
 Welcome to the next step of your Python journey.
 
 ## What is this chapter about?
 
-A list stores many items in one variable.
+Lists store many values in one variable.
+You can add, remove, and loop through the items.
 
 ## What you learn in this chapter
 
-- Create lists
-- Read and change items
+- Create a list with square brackets
+- Read items by index (starting at 0)
 - Add and remove items
-- Loop through lists
+- Loop through a list with for
 
 ## Key idea
 
-Chapter 5 - Lists helps you write stronger and smarter programs.
+Lists help you write stronger and smarter programs.
 
-## List basics
+## Examples
 
-- Index starts at 0
-- append() adds at the end
-- remove() deletes by value
+### Example 1
 
-Next: Open exercises.ipynb and complete each TODO block.
+```python
+fruits = ["apple", "banana", "mango"]
+print(fruits[0])
+fruits.append("orange")
+print(fruits)
+```
+
+### Example 2
+
+```python
+pets = ["dog", "cat", "fish"]
+for pet in pets:
+    print("I like", pet)
+```
+
+## Quick tips
+
+- The first item has index 0, not 1.
+- append() adds an item to the end.
+- remove() deletes the first matching item.
+- len(my_list) tells you how many items there are.
+
+Next: Open `exercises.ipynb` and complete each TODO block.

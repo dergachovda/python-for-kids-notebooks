@@ -1,26 +1,48 @@
-# Chapter 7 - Functions
+# Functions
 
 Welcome to the next step of your Python journey.
 
 ## What is this chapter about?
 
-Functions are reusable blocks of code.
+Functions are reusable blocks of code that you can call by name.
+They help you avoid repeating yourself and keep programs organized.
 
 ## What you learn in this chapter
 
 - Define functions with def
-- Use parameters
-- Return values
-- Organize code with small functions
+- Use parameters to pass data in
+- Return values with return
+- Break big tasks into small functions
 
 ## Key idea
 
-Chapter 7 - Functions helps you write stronger and smarter programs.
+Functions help you write stronger and smarter programs.
 
-## Function tips
+## Examples
 
-- Use clear function names
-- Keep one task per function
-- return sends a value back
+### Example 1
 
-Next: Open exercises.ipynb and complete each TODO block.
+```python
+def greet(name):
+    print("Hello", name)
+
+greet("Mila")
+```
+
+### Example 2
+
+```python
+def add(a, b):
+    return a + b
+
+print(add(3, 4))
+```
+
+## Quick tips
+
+- Give your function a clear name that describes what it does.
+- Use return when the function should give back a value.
+- One function should do one job.
+- Call the function by writing its name with parentheses.
+
+Next: Open `exercises.ipynb` and complete each TODO block.

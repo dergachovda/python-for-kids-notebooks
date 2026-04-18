@@ -1,26 +1,44 @@
-# Chapter 9 - Modules and Project Structure
+# Modules and Project Structure
 
 Welcome to the next step of your Python journey.
 
 ## What is this chapter about?
 
-Modules help you split code into files and reuse tools.
+Modules are files full of useful code that you can import into your programs.
+Python comes with many built-in modules like random and math.
 
 ## What you learn in this chapter
 
-- Import built-in modules
-- Create your own module
-- Use from ... import ...
-- Organize mini projects
+- Import a module with import
+- Use random and math modules
+- Import specific items with from ... import
+- Understand how to organize project files
 
 ## Key idea
 
-Chapter 9 - Modules and Project Structure helps you write stronger and smarter programs.
+Modules and Project Structure help you write stronger and smarter programs.
 
-## Project tips
+## Examples
 
-- One file can focus on one job
-- Use short clear names
-- Keep helpers in separate module files
+### Example 1
 
-Next: Open exercises.ipynb and complete each TODO block.
+```python
+import random
+print(random.randint(1, 10))
+```
+
+### Example 2
+
+```python
+import math
+print(math.sqrt(81))
+```
+
+## Quick tips
+
+- import random gives you the whole random module.
+- from random import randint imports just one function.
+- Keep helper code in separate .py files.
+- Use short, clear file names for your modules.
+
+Next: Open `exercises.ipynb` and complete each TODO block.
