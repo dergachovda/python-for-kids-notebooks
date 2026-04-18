@@ -2,7 +2,9 @@
 
 Interactive Jupyter notebooks for learning Python based on *Python for Kids* by Jason R. Briggs.
 
-Original book page: [Python for Kids, 2nd Edition](https://nostarch.com/python-kids-2nd-edition)
+![Python for Kids book cover](.images/python_for_kids_book.jpg)
+
+Original book page: [Python for Kids](https://www.amazon.com.au/Python-Kids-Jason-Briggs/dp/1593274076)
 
 This repository now uses a guided release workflow so students do not see all chapters immediately.
 
@@ -115,6 +117,7 @@ python scripts/release.py reset
 python-for-kids-notebooks/
 |
 |-- README.md
+|-- contents.md
 |-- requirements.txt
 |-- .gitignore
 |-- run.bat
@@ -138,6 +141,12 @@ python-for-kids-notebooks/
 |   |-- chapter-10-classes-and-objects/
 |   |-- chapter-11-turtle-graphics/
 |   |-- chapter-12-mini-projects/
+|   |-- chapter-13-beginning-bounce-game/
+|   |-- chapter-14-finishing-bounce-game/
+|   |-- chapter-15-creating-stick-man-graphics/
+|   |-- chapter-16-developing-stick-man-game/
+|   |-- chapter-17-creating-stick-man/
+|   |-- chapter-18-completing-stick-man-game/
 |   `-- bonus-mini-project/
 |
 |-- lessons/
@@ -161,9 +170,17 @@ python-for-kids-notebooks/
 - Chapter 10: Classes and Objects
 - Chapter 11: Turtle Graphics
 - Chapter 12: Mini Projects
+- Chapter 13: Beginning Your First Game: Bounce! (MVP practice)
+- Chapter 14: Finishing Your First Game: Bounce! (MVP practice)
+- Chapter 15: Creating Graphics for the Mr. Stick Man Game (MVP practice)
+- Chapter 16: Developing the Mr. Stick Man Game (MVP practice)
+- Chapter 17: Creating Mr. Stick Man (MVP practice)
+- Chapter 18: Completing the Mr. Stick Man Game (MVP practice)
 - Bonus: Guess the Number
 
-All chapters include `theory.md`, `exercises.ipynb`, and `solutions.ipynb` (bonus has project notebook).
+Chapters 1-12 include `theory.md`, `exercises.ipynb`, and `solutions.ipynb`.
+Chapters 13-18 currently include MVP practice files: `theory.md` and `exercises.ipynb`.
+Bonus has project notebook content.
 
 ## Notes
 

@@ -133,6 +133,60 @@
       ]
     },
     {
+      "slug": "chapter-13-beginning-bounce-game",
+      "title": "Beginning Your First Game: Bounce!",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": []
+    },
+    {
+      "slug": "chapter-14-finishing-bounce-game",
+      "title": "Finishing Your First Game: Bounce!",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": []
+    },
+    {
+      "slug": "chapter-15-creating-stick-man-graphics",
+      "title": "Creating Graphics for the Mr. Stick Man Game",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": []
+    },
+    {
+      "slug": "chapter-16-developing-stick-man-game",
+      "title": "Developing the Mr. Stick Man Game",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": []
+    },
+    {
+      "slug": "chapter-17-creating-stick-man",
+      "title": "Creating Mr. Stick Man",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": []
+    },
+    {
+      "slug": "chapter-18-completing-stick-man-game",
+      "title": "Completing the Mr. Stick Man Game",
+      "practice_files": [
+        "theory.md",
+        "exercises.ipynb"
+      ],
+      "solution_files": []
+    },
+    {
       "slug": "bonus-mini-project",
       "title": "Bonus Mini Project",
       "practice_files": [
